@@ -1,9 +1,18 @@
 public class Medicamento {
+    private String id;
     private String nome;
-    private String laboratorio;
-    private Double valor;
+    private double valor;
+    
 
-     public String getNome() {
+    public String getId(){
+        return id;
+    } 
+    
+    public void setId(String id){
+        this.id = id;
+    }
+    
+    public String getNome() {
         return nome;
     }
 
@@ -11,24 +20,24 @@ public class Medicamento {
         this.nome = nome;
     }
 
-    public String getLaboratorio() {
-        return laboratorio;
-    }
-
-    public void setLaboratorio(String laboratorio) {
-        this.laboratorio = laboratorio;
-    }
-
-    public Double getValor() {
+    public double getValor() {
         return valor;
     }
 
-    public void setValor(Double valor) {
+    public void setValor(double valor) {
         this.valor = valor;
     }
     
+    
     @Override
     public String toString(){
-        return "\nNome: " + nome + "\nLaboratorio: " + laboratorio + "\nValor: R$" + valor;
+        return "_______" + "\n" 
+                + "ID: " + "\n" 
+                + id + "\n"
+                + "Nome: " + "\n"
+                + nome + "\n"
+                + "valor: "+ "\n"
+                + valor + "\n"
+                + "_______";
     }
 }
